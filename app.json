@@ -1,13 +1,13 @@
 {
-    "name": "✯𝗩𝗖𝗣𝗹𝗮𝘆𝗕𝗼𝘁✯",
-    "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
+    "name": "painkilibot",
+    "logo": "https://telegra.ph/file/62f59f408140d4972c7c1.jpg",
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["music", "voicechat", "telegram"],
     "repository": "https://github.com/QueenArzoo/VCPlayBot",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
-            "description": "Session string (pyrogram)",
+            "description": "use @PyroStringSession_bot ",
             "required": true
         },
         "BOT_TOKEN": {
@@ -34,7 +34,7 @@
         "DURATION_LIMIT": {
             "description": "In minutes!",
             "required": true,
-            "value": "15"
+            "value": "30"
         }
     },
     "buildpacks": [
