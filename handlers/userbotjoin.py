@@ -4,7 +4,7 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.decorators import errors, authorized_users_only
 
-@Client.on_message(filters.group & filters.command(["userbotjoin"]))
+@Client.on_message(filters.group & filters.command(["ujoin"]))
 @authorized_users_only
 @errors
 async def addchannel(client, message):
@@ -13,21 +13,21 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Add me as admin of yor group first</b>",
+            "<b>അഡ്മിൻ ആക്കട തെണ്ടി ..  അല്ലെങ്കിൽ ഞാൻ പാടൂല.... </b>",
         )
         return
 
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "VCPlaybot"
+        user.first_name =  "painkilibot"
 
     try:
         await USER.join_chat(invitelink)
         await USER.send_message(message.chat.id,"I joined here as you requested")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>@VCPlayRobot already in your chat</b>",
+            "<b>ഞാൻ ഇവിടെ ഉണ്ട് ...</b>",
         )
         pass
     except Exception as e:
@@ -38,10 +38,10 @@ async def addchannel(client, message):
         )
         return
     await message.reply_text(
-            "<b>@VCPlayRobot userbot joined your chat</b>",
+            "<b>അതാണു..... ഞാൻ ഈ കളിക്ക് ഇല്ല</b>",
         )
     
-@USER.on_message(filters.group & filters.command(["userbotleave"]))
+@USER.on_message(filters.group & filters.command(["uleave"]))
 async def rem(USER, message):
     try:
         await USER.leave_chat(message.chat.id)
