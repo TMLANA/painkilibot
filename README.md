@@ -1,11 +1,14 @@
-# How To Host
+# പൈങ്കിളി ബോട്ട് 
+![painkili](https://telegra.ph/file/855a4abb954747ad74726.jpg)
+
+How To Host
 The easiest way to deploy this Bot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/QueenArzoo/VCPlayBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 Get STRING_NAME from here:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@QueenArzoo/VCPlayBot)
-
+[![bot](https://t.me/PyroStringSession_bot)
 ### Mandatory Vars.
 
 - Some Of The Mandatory Vars Are :-
@@ -40,9 +43,9 @@ Get STRING_NAME from here:
 - `/resume` - resume song play
 - `/skip` - play next song
 - `/end` - stop music play
-- `/userbotjoin` - invite assistant to your chat
-- `/userbotleave` - remove assistant from your chat
-- `/admincache` - Refresh admin list
+- `/ujoin` - invite assistant to your chat
+- `/uleave` - remove assistant from your chat
+- `/reload` - Refresh admin list
 
 ## Requirements
 
