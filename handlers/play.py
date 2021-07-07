@@ -86,7 +86,7 @@ def changeImageSize(maxWidth, maxHeight, image):
     newImage = image.resize((newWidth, newHeight))
     return newImage
 
- sync with aiohttp.ClientSession() as session:
+ syncc with aiohttp.ClientSession() as session:
      
    async with session.get(thumbnail) as resp:
             if resp.status == 200:
